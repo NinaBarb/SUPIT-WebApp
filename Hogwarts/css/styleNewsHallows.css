@@ -1,0 +1,65 @@
+@import url("defaultStyle.css");
+
+body {
+  background-color: bisque;
+}
+header div img {
+  width: 100%;
+  height: 500px;
+  animation-name: slikaAnimacija;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+main {
+  margin: 0% 20%;
+}
+main h1 {
+  text-align: center;
+  border-bottom: 2px solid darkgoldenrod;
+  margin: 5% 0%;
+  padding: 10px;
+}
+.text {
+  justify-content: center;
+  text-align: justify;
+  margin-bottom: 8%;
+}
+.text p{
+  padding-bottom: 3%;
+}
+.video {
+  margin-bottom: 10%;
+  text-align: center;
+}
+.video video {
+  max-width: 100%;
+}
+/* ---------------------------------FOOTER---------------------------------------------- */
+footer {
+  height: 250px;
+  width: 100%;
+  bottom: 0;
+  background-image: url("../img/footerImg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+
+@keyframes slikaAnimacija {
+  0% {
+    margin-top: -30%;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}

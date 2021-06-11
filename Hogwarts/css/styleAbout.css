@@ -1,0 +1,235 @@
+@import url("defaultStyle.css");
+.rightNav {
+  position: fixed;
+  top: 3%;
+  right: 2%;
+  list-style-type: none;
+  display: flex;
+  animation: slideIn 2s ease-in;
+}
+.rightNav li a {
+  text-decoration: none;
+  color: darkslategrey;
+  padding: 10px;
+}
+.rightNav li a:hover {
+  color: goldenrod;
+}
+/* ----------------------GENERALLY ABOUT THE PAGE----------------------------------------------------------*/
+html {
+  scroll-behavior: smooth;
+}
+main {
+  text-align: center;
+  background-color: bisque;
+}
+.greatHallImg img {
+  width: 100%;
+  margin-bottom: 5%;
+  animation-name: slikaAnimacija;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+.about {
+  border-bottom: darkgoldenrod 3px ridge;
+  margin: 0 20%;
+  padding-bottom: 10px;
+  font-size: 36px;
+}
+h2 {
+  margin: 2% 0%;
+  font-size: 26px;
+  color: darkslategrey;
+  text-shadow: 1px 1px black;
+}
+.textGold {
+  background-color: rgb(184, 134, 11, 0.4);
+}
+.medieval {
+  font-family: MedievalSharp, "Papyrus", Garamond, "Times New Roman", sans-serif;
+  font-size: 18px;
+  padding: 3% 0;
+  margin: 0 20%;
+}
+/* ----------------------HISTORY + HOUSES ----------------------------------------------------------*/
+.table {
+  display: grid;
+  grid-gap: 0.5% 0.1%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0 5%;
+  margin-top: 2%;
+}
+.table div,
+.table2 div {
+  border: gray 1px solid;
+}
+.table div h3,
+.table2 div h3 {
+  font-weight: 100;
+  padding-top: 10px;
+  border-bottom: gray 1px solid;
+  margin: 0 4%;
+}
+.table div p,
+.table2 div p {
+  padding: 10%;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+.Gryfindorr:hover {
+  background-image: linear-gradient(#6c1a31, #a04e1b, #d67e03);
+}
+.Hufflepuff:hover {
+  background-image: linear-gradient(#5e3225, #965f2c, #ba7625);
+}
+.Ravenclaw:hover {
+  background-image: linear-gradient(#063f53, #5f88a6, #7b9bc0);
+}
+.Slytherin:hover {
+  background-image: linear-gradient(#134731, #5d796d, #8b8a8e);
+}
+/* ----------------------HISTORY(not just here, up as well) ----------------------------------------------------------*/
+.table2 {
+  display: grid;
+  grid-gap: 0.5% 0.1%;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 5%;
+  margin-top: 2%;
+}
+/* ----------------------POWERFUL WIZARDS WHO ATTENDED HOGWARTS ----------------------------------------------------------*/
+.images {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin: 2% 5%;
+  column-gap: 2%;
+  row-gap: 0.5%;
+}
+.images h3 {
+  border-bottom: rgba(128, 128, 128, 0.404) 1px solid;
+  margin: 0% 5%;
+  text-transform: uppercase;
+}
+.images img {
+  transition: 0.3s;
+}
+.images div img:hover {
+  transform: scale(2);
+}
+/* ----------------------REACH US ----------------------------------------------------------*/
+.reachUs {
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(235, 230, 230, 0.822) 0%,
+      rgba(78, 75, 75, 0.432) 100%
+    ),
+    url(../img/map.JPG);
+}
+.map {
+  align-content: center;
+  padding: 2% 0;
+}
+.map iframe {
+  width: 40%;
+}
+.reachUsContainer {
+  display: grid;
+  column-gap: 3%;
+  grid-template-columns: repeat(2, minmax(30%, 1fr));
+  word-wrap: break-word;
+  margin: 0px 30%;
+  align-content: center;
+  padding-top: 3%;
+}
+.left,
+.right {
+  background-color: whitesmoke;
+}
+.left h3,
+.right h3 {
+  text-align: left;
+  padding-bottom: 20px;
+  margin-left: 5%;
+  display: flex;
+}
+.left div,
+.right div {
+  padding-bottom: 20px;
+  margin: 0 20%;
+  text-align: justify;
+}
+h3 i {
+  color: darkgoldenrod;
+}
+/* ----------------------FOOTER----------------------------------------------------------*/
+footer {
+  height: 250px;
+  width: 100%;
+  bottom: 0;
+  background-image: url("../img/footerImg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+/* ----------------------OTHER----------------------------------------------------------*/
+@keyframes slikaAnimacija {
+  0% {
+    margin-top: -30%;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: skewX(53deg) translate(-700px);
+  }
+  60% {
+    transform: translateX(0px);
+  }
+  62% {
+    transform: skewX(0deg);
+  }
+  70% {
+    transform: skewX(-20deg);
+  }
+  100% {
+    transform: skewX(0deg);
+  }
+}
+
+@media all and (max-width: 768px) {
+  .table,
+  .table2,
+  .reachUsContainer {
+    grid-template-columns: 1fr;
+  }
+  .table,
+  .table2,
+  .wizards{
+    padding-bottom: 18%;
+  }
+  .map iframe {
+    width: 60%;
+  }
+  .reachUsContainer {
+    margin: 0px 20%;
+  }
+  .rightNav{
+    top: 80%;
+    right: 2%;
+    display: flex;
+    flex-direction: column;
+  }
+}

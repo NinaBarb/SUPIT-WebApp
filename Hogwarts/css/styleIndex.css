@@ -1,0 +1,56 @@
+@import url("defaultStyle.css");
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 110%;
+  position: fixed;
+}
+.text {
+  position: absolute;
+  width: 55%;
+  top: 40%;
+  left: 30%;
+}
+
+.typing {
+  color: #192169;
+  font-size: 100px;
+  font-family: MedievalSharp, "Papyrus", Garamond, "Times New Roman", sans-serif;
+}
+
+.typing2 {
+  color: #41456d;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  background-color: white;
+  font-size: 100px;
+  animation: blink 0.8s infinite ease;
+}
+/* -------------------------ANIMATION & MOBILE----------------------------------- */
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .typing {
+    font-size: 3rem;
+  }
+
+  .typing2 {
+    font-size: 2rem;
+  }
+
+  .cursor {
+    font-size: 3rem;
+  }
+}

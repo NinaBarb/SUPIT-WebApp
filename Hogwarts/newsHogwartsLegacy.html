@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwarts Legacy</title>
+    <link rel="stylesheet" href="css/styleNewsLegacy.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=MedievalSharp" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul class="leftNav" id="leftNav">
+            <li>
+                <a href="index.html"><img src="img/logoHW.png" alt="HogwartsLogo" width="60" height="60"class="logoHW"></a>
+            </li>
+            <li>
+                <a href="index.html">
+                    <div>
+                        <i class="material-icons">home</i>
+                    </div>
+                    <div>
+                        Home
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="about.html">
+                    <div>
+                        <i class="material-icons">more</i>
+                    </div>
+                    <div>
+                        About
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="news.html">
+                    <div>
+                        <i class="material-icons">info</i>
+                    </div>
+                    <div>
+                        News
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="curriculum.html">
+                    <div>
+                        <i class="material-icons">school</i>
+                    </div>
+                    <div>
+                        Curriculum
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="contactForm">
+                    <div>
+                        <i class="material-icons">mail</i>
+                    </div>
+                    <div>
+                        Contact
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+        <div class="hamburgerMenu" id="hamburgerMenu">
+            <i class="material-icons">menu</i>
+        </div>
+    </nav>
+
+    <header>
+        <div><img src="img/hogwarts-legacy-header.png" alt=""></div>
+    </header>
+
+    <main>
+        <h1>The game we've all been waiting for</h1>
+
+        <p>
+            New Hogwarts Legacy game trailer is finally here. It's real.
+            Hogwarts Legacy is filled with immersive magic, putting players at the center of their adventure to become the witch or wizard they choose to be. They will grow their character’s abilities as they master powerful spells, hone combat skills and select companions to help them face off against deadly enemies. Players will also encounter missions and scenarios that will pose difficult choices and determine what they stand for.
+            Hogwarts Legacy is an open-world, single-player, action role-playing videogame (RPG) set in the 1800s wizarding world. The story has players experiencing life as a student at Hogwarts School of Witchcraft and Wizardry like never before, as they live the unwritten and embark on a dangerous journey to uncover a hidden truth of the wizarding world.
+        </p>
+
+        <div class="gallery">
+            <div class="container"><img src="img/legacySmall.jpg" alt="" onclick="openModal();currentSlide(1)"></div>
+            <div class="container"><img src="img/smallTroll.png" alt="" onclick="openModal();currentSlide(2)"></div>
+            <div class="container"><img src="img/smallWand.jpg" alt="" onclick="openModal();currentSlide(3)"></div>
+            <div class="container"><img src="img/smallSorting.jpg" alt="" onclick="openModal();currentSlide(4)"></div>
+            <div class="container"><img src="img/flySmall.jpg" alt=""
+            onclick="openModal();currentSlide(5)"></div>
+        </div>
+
+        <div class="video">
+            <video controls>
+                <source src="video/y2mate.com - Hogwarts Legacy  Official Reveal Trailer  PS5_1080pFHR.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="modalBg">
+            <form class="modalBox"  action="http://www.fulek.com/VUA/SUPIT/ContactUs" method="post" enctype="text/plain">
+                <button id="close"><i class="material-icons" >cancel</i></button>
+                <label for="fname">Full name</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter full name here..." autofocus required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email here..." required>
+                <label for="importance">Importance</label>
+                <select name="importance" id="importance">
+                    <option value="low">Low</option>
+                    <option value="high">High</option>
+                </select>
+                <label for="txtArea">Message</label>
+                <textarea id="txtArea" name="txtArea" rows="10" placeholder="Type your message here..."></textarea>
+                <div class="footerModal">
+                    <input type="checkbox" id="check" name="check" value="check">
+                    <label for="check"> I want to receive the Newsletter</label><br>
+                    <div class="buttonsModal">
+                        <button id="sendForm">SEND</button>
+                        <button id="quitForm">QUIT</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <id id="myModal" class="modal">
+            <div class="modal-content">
+          
+              <div class="mySlides" >
+                <img src="img/LegacyBig.jpg" >
+              </div>
+          
+              <div class="mySlides">
+                <img src="img/bigTroll.png">
+              </div>
+          
+              <div class="mySlides">
+                <img src="img/bigWand.jpg">
+              </div>
+              
+              <div class="mySlides">
+                <img src="img/bigSorting.jpg">
+              </div>
+
+              <div class="mySlides">
+                <img src="img/flyBig.jpg">
+              </div>
+              
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <p class="txtMod">Click on the blacked out area to close modal</p>
+          </div>
+
+    </main>
+
+    <footer>
+        <h1>Draco Dormiens Nunquam Titillandus</h1>
+        <h2>Never tickle a sleeping dragon</h2>
+    </footer>
+    
+    <script src="javaScript/openGallery.js"></script>
+    <script src="javaScript/modalContact.js"></script>
+    <script src="javaScript/mobileMenu.js"></script>
+</body>
+</html>

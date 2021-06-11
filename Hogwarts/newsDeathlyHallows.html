@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwarts Legacy</title>
+    <link rel="stylesheet" href="css/styleNewsHallows.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=MedievalSharp" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul class="leftNav" id="leftNav">
+            <li>
+                <a href="index.html"><img src="img/logoHW.png" alt="HogwartsLogo" width="60" height="60"class="logoHW"></a>
+            </li>
+            <li>
+                <a href="index.html">
+                    <div>
+                        <i class="material-icons">home</i>
+                    </div>
+                    <div>
+                        Home
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="about.html">
+                    <div>
+                        <i class="material-icons">more</i>
+                    </div>
+                    <div>
+                        About
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="news.html">
+                    <div>
+                        <i class="material-icons">info</i>
+                    </div>
+                    <div>
+                        News
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="curriculum.html">
+                    <div>
+                        <i class="material-icons">school</i>
+                    </div>
+                    <div>
+                        Curriculum
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="contactForm">
+                    <div>
+                        <i class="material-icons">mail</i>
+                    </div>
+                    <div>
+                        Contact
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+        <div class="hamburgerMenu" id="hamburgerMenu">
+            <i class="material-icons">menu</i>
+        </div>
+    </nav>
+
+    <header>
+        <div><img src="img/peverellBrothers.jpg" alt=""></div>
+    </header>
+
+    <div class="modalBg">
+        <form class="modalBox"  action="http://www.fulek.com/VUA/SUPIT/ContactUs" method="post" enctype="text/plain">
+            <button id="close"><i class="material-icons" >cancel</i></button>
+            <label for="fname">Full name</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter full name here..." autofocus required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email here..." required>
+            <label for="importance">Importance</label>
+            <select name="importance" id="importance">
+                <option value="low">Low</option>
+                <option value="high">High</option>
+            </select>
+            <label for="txtArea">Message</label>
+            <textarea id="txtArea" name="txtArea" rows="10" placeholder="Type your message here..."></textarea>
+            <div class="footerModal">
+                <input type="checkbox" id="check" name="check" value="check">
+                <label for="check"> I want to receive the Newsletter</label><br>
+                <div class="buttonsModal">
+                    <button id="sendForm">SEND</button>
+                    <button id="quitForm">QUIT</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <main>
+        <h1>The story of the Deathly Hallows</h1>
+        <div class="text">
+            <p>
+                "The Elder Wand," he said, and he drew a straight vertical line on the parchment. "The Resurrection Stone," he said, and he added a circle on top of the line. "The Cloak of Invisibility," he finished, enclosing both line and circle in a triangle, to make the symbol that so intrigued Hermione. "Together," he said, "the Deathly Hallows."
+                <br>
+                —Xenophilius Lovegood
+            </p>
+            <p>
+                The Deathly Hallows are three highly powerful magical objects supposedly created by Death and given to each
+                of three brothers in the Peverell family. They consisted of the Elder Wand, an immensely powerful wand that
+                was considered unbeatable; the Resurrection Stone, a stone which could summon the spirits of the dead, and
+                the Cloak of Invisibility, which, as its name suggests, renders the user completely invisible. According to
+                the story, both Antioch Peverell (owner of the Wand) and Cadmus Peverell (owner of the Stone) came to bad
+                ends. However, Ignotus Peverell's wisdom in requesting the Cloak was rewarded. According to legend, he who possesses these three artefacts would become the Master of Death. Dumbledore told Harry that he and another wizard, Gellert Grindelwald took this to mean that the uniter of the Deathly Hallows would be invincible. The story of the Deathly Hallows was originally told by Beedle the Bard and subsequently passed from family to family as a wizard fairytale. Few wizards ever realised that the Deathly Hallows were genuine items. Most people thought that there were things that Beedle had made up to entertain young wizards and witches.
+                No one but Harry Potter has been known to have been in command of all three at the same time, though he was
+                never in possession of them all at once (he dropped the stone in the Forbidden Forest just before gaining
+                the wand that he had won the alliance of in a previous scuffle at Malfoy Manor). Albus Dumbledore had also
+                possessed all three, but not all at once, much like Harry, as he was never the true owner of the Cloak.
+            </p>
+        </div>
+    
+        <div class="video">
+            <video controls>
+                <source src="video/The Three Brothers (2010) HD.mp4" type="video/mp4">
+            </video>
+        </div>
+    </main>
+
+    <footer>
+        <h1>Draco Dormiens Nunquam Titillandus</h1>
+        <h2>Never tickle a sleeping dragon</h2>
+    </footer>
+
+    <script src="javaScript/modalContact.js"></script>
+    <script src="javaScript/mobileMenu.js"></script>
+</body>
+</html>

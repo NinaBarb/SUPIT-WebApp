@@ -1,0 +1,144 @@
+@import url("defaultStyle.css");
+main {
+  text-align: center;
+}
+body {
+  background-color: bisque;
+}
+main {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15%;
+}
+.novosti {
+  font-style: italic;
+  font-size: 36px;
+  border-bottom: 3px solid darkgoldenrod;
+  margin: 0 20%;
+}
+/* ---------------------------NEWS CIRCLES-------------------------------- */
+.optNews {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  column-gap: 2%;
+  row-gap: 1%;
+  margin: 0% 10%;
+  justify-content: center;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+.circle1,
+.circle2,
+.circle3 {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 10px #9f8e7b solid;
+  outline: none;
+  cursor: pointer;
+  overflow: hidden;
+  animation: pop-in 2s;
+}
+.circle1 h2,
+.circle2 h2,
+.circle3 h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: rgb(228, 201, 168);
+}
+.circle1 p,
+.circle2 p,
+.circle3 p {
+  font-size: 20px;
+  color: #a79f97;
+  line-height: 25px;
+  padding-top: 10%;
+}
+.circle1 a,
+.circle2 a,
+.circle3 a {
+  text-decoration: none;
+}
+.circle1 {
+  background-image: url("../img/deathlyHollows.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.circle2 {
+  background-image: url("../img/Legacy.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.circle3 {
+  background-image: url("../img/hat.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.bg {
+  background-color: #3b3329c5;
+  height: 100%;
+  width: 100%;
+  border-radius: 30%;
+  padding: 20%;
+  opacity: 0;
+  transform: scaleY(0);
+  transition: all 2s;
+}
+.circle1:hover .bg {
+  transform: scaleY(1);
+  opacity: 1;
+}
+.circle2:hover .bg {
+  transform: scaleY(1);
+  opacity: 1;
+}
+.circle3:hover .bg {
+  transform: scaleY(1);
+  opacity: 1;
+}
+/* ---------------------------FOOTER------------------------------------ */
+footer {
+  height: 250px;
+  width: 100%;
+  bottom: 0;
+  background-image: url("../img/footerImg.jpg");
+  background-size: cover;
+  background-position: center; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+/* ---------------------------MOBILE & ANIMATION------------------------------------ */
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media all and (max-width: 768px) {
+  .optNews {
+    grid-template-columns: 1fr;
+  }
+  .circle1 h2,
+  .circle2 h2,
+  .circle3 h2 {
+    font-size: 20px;
+  }
+  .circle1 p,
+  .circle2 p,
+  .circle3 p {
+    font-size: 15px;
+    line-height: 15px;
+  }
+}

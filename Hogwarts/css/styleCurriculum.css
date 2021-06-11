@@ -1,0 +1,158 @@
+@import url("defaultStyle.css");
+body {
+  background-color: #ffe3c2;
+}
+main {
+  margin: 15% 20%;
+}
+.curriculum {
+  font-style: italic;
+  font-size: 36px;
+  border-bottom: 3px solid darkgoldenrod;
+  text-align: center;
+  animation-duration: 2s;
+  animation-name: slideup;
+}
+/* -------------------------------AUTOCOMPLETE BOX------------------------------------ */
+.wrapper {
+  max-width: 450px;
+  margin: auto;
+  align-content: center;
+  padding-top: 5%;
+  display: flex;
+  animation: slidein 2s;
+}
+.searchInput input {
+  height: 55px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+}
+.icon {
+  height: 55px;
+  width: 55px;
+  line-height: 55px;
+  position: absolute;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  color: darkblue;
+}
+.autocomBox {
+  padding: 10px 8px;
+  max-height: 280px;
+  overflow-y: hidden;
+  background-color: whitesmoke;
+  display: none;
+}
+.autocomBox li {
+  list-style-type: none;
+  padding: 8px 12px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.autocomBox li:hover {
+  background-color: bisque;
+}
+.wrapper #button {
+  width: 50px;
+  height: 50px;
+  margin: 4%;
+  background-color: #bfab93;
+  border: 2px #9f8e7b solid;
+  border-radius: 50%;
+  outline: none;
+}
+.wrapper #button:hover {
+  box-shadow: 5px 10px 8px #888888;
+  transition: all 0.1s ease-in;
+  transform: scale(1.1);
+}
+
+/* -------------------------------TABLE----------------------------------- */
+.responsive {
+  overflow-x: auto;
+}
+.myTable {
+  margin: 10% auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+.myTable tbody tr,
+.myTable thead {
+  border-bottom: 1px #80726236 solid;
+}
+td,
+.myTable thead tr th {
+  text-align: left;
+  line-height: 50px;
+  padding-left: 2%;
+}
+.myTable tbody tr {
+  animation: fadeIn 2s ease;
+}
+.name {
+  width: 50%;
+}
+.myTable tfoot {
+  color: red;
+  font-weight: bold;
+  border-top: 2px #807262 solid;
+}
+#deleteButton {
+  width: 50px;
+  border: 5px #807262 solid;
+  background-color: #60554a;
+  color: white;
+  cursor: pointer;
+}
+/* -------------------------------FOOTER------------------------------------ */
+footer {
+  height: 300px;
+  width: 100%;
+  background-image: url("../img/footerImg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slidein {
+  10% {
+    margin-left: 150%;
+    width: 300%;
+    opacity: 0;
+  }
+  100% {
+    margin-left: 35.4%;
+    width: 100%;
+  }
+}
+
+@keyframes slideup {
+  from {
+    margin-top: 50%;
+  }
+
+  to {
+    margin-top: 20%;
+  }
+}

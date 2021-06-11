@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="css/styleAbout.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=MedievalSharp" /> <!--fancyfont-->
+</head>
+<body>
+    <nav>
+        <ul class="leftNav" id="leftNav">
+            <li>
+                <a href="#"><img src="img/logoHW.png" alt="HogwartsLogo" width="60" height="60"class="logoHW"></a>
+            </li>
+            <li>
+                <a href="index.html">
+                    <div>
+                        <i class="material-icons">home</i>
+                    </div>
+                    <div>
+                        Home
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="about.html">
+                    <div>
+                        <i class="material-icons">more</i>
+                    </div>
+                    <div>
+                        About
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="news.html">
+                    <div>
+                        <i class="material-icons">info</i>
+                    </div>
+                    <div>
+                        News
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="curriculum.html">
+                    <div>
+                        <i class="material-icons">school</i>
+                    </div>
+                    <div>
+                        Curriculum
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="contactForm">
+                    <div>
+                        <i class="material-icons">mail</i>
+                    </div>
+                    <div>
+                        Contact
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="rightNav">
+            <li>
+                <a href="#houses"><i class="material-icons">security</i></a>
+            </li>
+            <li>
+                <a href="#history"><i class="material-icons">history</i></a>
+            </li>
+            <li>
+                <a href="#wizards"><i class="material-icons">groups</i></a>
+            </li>
+            <li>
+                <a href="#reachUs"><i class="material-icons">near_me</i></a>
+            </li>
+        </ul> 
+
+        <div class="hamburgerMenu" id="hamburgerMenu">
+            <i class="material-icons">menu</i>
+        </div>
+    </nav>
+    
+    <div class="modalBg">
+        <form class="modalBox"  action="http://www.fulek.com/VUA/SUPIT/ContactUs" method="post" enctype="text/plain">
+            <button id="close"><i class="material-icons" >cancel</i></button>
+            <label for="fname">Full name</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter full name here..." autofocus required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email here..." required>
+            <label for="importance">Importance</label>
+            <select name="importance" id="importance">
+                <option value="low">Low</option>
+                <option value="high">High</option>
+            </select>
+            <label for="txtArea">Message</label>
+            <textarea id="txtArea" name="txtArea" rows="10" placeholder="Type your message here..."></textarea>
+            <div class="footerModal">
+                <input type="checkbox" id="check" name="check" value="check">
+                <label for="check"> I want to receive the Newsletter</label><br>
+                <div class="buttonsModal">
+                    <button id="sendForm">SEND</button>
+                    <button id="quitForm">QUIT</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <main>
+        <div class="greatHallImg">
+            <img src="img/greatHall.png" alt="HogwartsGreatHall">
+        </div>
+        <h1 class="about" id="houses">About</h1>
+        <h2><i class="material-icons">security</i>Houses</h2>
+
+        <div class="textGold">
+            <p class="medieval">
+                Houses at Hogwarts are both the living and learning communities for its students. Each year's group of students in the same House shares the same dormitory and many classes. The houses compete throughout the school year, by earning and losing points for behaviour. The House with the most points wins the House Cup. Each House also has its own Quidditch team that competes for the Inter-House Quidditch Cup.
+            </p>
+            <p class="medieval">
+                In the early days of Hogwarts, the four founders handpicked students for their Houses. When the founders worried how students would be selected after their deaths, Godric Gryffindor took his hat off and each "put some brains" in it, creating the Sorting Hat to choose future students for each House. At the beginning of each school year, the magical Sorting Hat is placed on each new student's head during the Sorting ceremony.
+                The Sorting Hat announces the House the student is to join. Before beginning the Sorting ceremony, it sings a short song about the founding of the school and the four Houses; the Sorting Hat's songs are different every year, and the Hat is said to take all year composing the next one.
+            </p>
+        </div>
+
+        <div class="table">
+            <div class="Gryfindorr">
+                <h3>Gryffindor</h3>
+                <p>
+                    Gryffindor values bravery, daring, nerve, and chivalry. Its emblematic animal is the lion, and its colours are scarlet and gold. Minerva McGonagall was the most recent Head of Gryffindor. Sir Nicholas de Mimsy-Porpington, also known as "Nearly Headless Nick", was the House Ghost. The founder of the House was Godric Gryffindor. Gryffindor corresponds to the element of Fire. The common room was located in one of the highest towers at Hogwarts, the entrance is guarded by a portrait of The Fat Lady. She permits entrance if given the correct password, which is changed numerous times throughout the school year.Famous Gryffindors include Albus Dumbledore, Harry Potter, and Minerva McGonagall.
+                </p>
+            </div>
+            <div class="Hufflepuff">
+                <h3>Hufflepuf</h3>
+                <p>
+                    Hufflepuff values hard work, dedication, patience, loyalty, and fair play. Its emblematic animal is the badger, and
+                    yellow and black are its colours. Pomona Sprout was the Head of Hufflepuff. The Fat Friar is its ghost. The founder
+                    of the House was Helga Hufflepuff.
+                
+                    Hufflepuff corresponds to the element of earth. The Hufflepuff dormitories and common room can be accessed by
+                    tapping the barrel two from the bottom, middle of the second row in the rhythm of "Helga Hufflepuff" and is
+                    described as being a cosy and welcoming place with yellow hangings, fat armchairs, and underground tunnels that lead
+                    to the dormitories, which have perfectly round doors, similar to barrel tops. Famous Hufflepuffs include Hengist of
+                    Woodcroft (founder of Hogsmeade), Newt Scamander (author of Fantastic Beasts and Where to Find Them), and Artemisia
+                    Lufkin (first female minister for magic).
+                </p>
+            </div>
+            <div class="Ravenclaw">
+                <h3>Ravenclaw</h3>
+                <p>
+                    Ravenclaw values intelligence, knowledge, curiosity, creativity and wit. Its emblematic animal is the eagle, and its colours are blue and bronze. The Ravenclaw Head of House in the 1990s was Filius Flitwick. The ghost of Ravenclaw is the Grey Lady, who was the daughter of Rowena Ravenclaw, the House's founder. Ravenclaw corresponds to the element of air. Ravenclaw students must answer a riddle as opposed to giving a password to enter their dormitories. This riddle, however, can be answered by non-Ravenclaws. Famous Ravenclaws include Luna Lovegood, Gilderoy Lockhart, Ignatia Wildsmith (inventor of Floo powder), and Garrick Ollivander.
+                </p>
+            </div>
+            <div class="Slytherin">
+                <h3>Slytherin</h3>
+                <p>
+                    Slytherin House values ambition, leadership, self-preservation, cunning and resourcefulness and was founded by
+                    Salazar Slytherin. Its emblematic animal is the serpent, and its colours are emerald green and silver. Professor
+                    Horace Slughorn was the Head of Slytherin during the 1997–1998 school year, replacing Severus Snape. Slytherin had
+                    produced the most Death Eaters and Dark Wizards, including Tom Riddle, Bellatrix Lestrange and Lucius Malfoy.
+                
+                    The Bloody Baron is the House Ghost. The founder of the House was Salazar Slytherin. Slytherin corresponds roughly
+                    to the element of water. The Slytherin dormitories and common room are reached through a bare stone wall in the
+                    Dungeons. The Slytherin common room lies beneath the Black Lake. It is a long, low underground room with rough stone
+                    walls and silver lamps hanging from the ceiling. Famous Slytherins include Merlin, Tom Riddle, Draco Malfoy, and
+                    Dolores Umbridge.
+                </p>
+            </div>
+        </div>
+
+        <div class="history" id="history">
+            <h2> <i class="material-icons">history</i>History</h2>
+        
+        
+            <div class="textGold">
+                <p class="medieval">
+                    Established around the 10th century, Hogwarts was considered to be one of the finest magical institutions in
+                    the Wizarding World, though other notable schools included Beauxbatons Academy of Magic in France, the
+                    Durmstrang Institute implied to be in northern Europe, and Ilvermorny School of Witchcraft and Wizardry in
+                    the United States.
+                </p>
+                <p class="medieval">
+                    Children with magical abilities were enrolled at birth, and acceptance was confirmed by owl post at age
+                    eleven. However, if the child in question was a Muggle-born, a staff member from the school visited the
+                    child and his or her family in order to inform them of their magical heritage and the existence of the
+                    Wizarding world.
+                </p>
+            </div>
+        
+            <div class="table2">
+                <div>
+                    <h3>Early</h3>
+                    <p>
+                        Hogwarts was founded around 990 A.D. by four of the greatest wizards and witches of the age: Godric
+                        Gryffindor, Helga Hufflepuff, Rowena Ravenclaw, and Salazar Slytherin. They each represented an aspect
+                        of personality that they wanted to bring out in new students. However, shortly after founding the
+                        school, Slytherin had a falling out with the other founders about blood purity, and wanted to admit only
+                        pure-blood students. He felt pure-blooded students deserved to learn magic, and those of other ancestry
+                        such as Muggle-borns and Half-bloods, were unworthy. The other three founders all disagreed, especially
+                        Gryffindor. Slytherin left the school, but not before secretly building the Chamber of Secrets. He
+                        foretold that only his own heir would be able to open it once they arrived at the school, and the heir
+                        would unleash a murderous basilisk living inside to purge the school of all Muggle-born students.
+                    </p>
+                </div>
+                <div>
+                    <h3>Middle</h3>
+                    <p>
+                        About three hundred years after the school was founded, the Triwizard Tournament was established as an
+                        interscholastic competition between three of the most prestigious magical schools in Europe: Hogwarts,
+                        Beauxbatons (France), and Durmstrang (An undetermined Northern European country). This tournament was
+                        considered the best way for wizards and witches of different nationalities to meet and socialise. The
+                        tournament continued for six centuries, until the death toll became too high. The tournament was
+                        discontinued until 1994.
+                    </p>
+                </div>
+                <div>
+                    <h3>1920</h3>
+                    <p>
+                        On 29 November 1926, the Daily Prophet reported that security had to be increased at Hogwarts in
+                        response to the growing threat of Gellert Grindelwald's impact on the Global wizarding war. Measures
+                        included Headmaster Armando Dippet holding an emergency meeting with worried parents and students being
+                        sent home early.
+                    </p>
+                </div>
+                <div>
+                    <h3>1942-1943</h3>
+                    <p>
+                        The existence of the school was threatened twice when the Chamber of Secrets was opened. The first time
+                        it was opened
+                        was in 1942, when Tom Marvolo Riddle, the Heir of Slytherin and the man who would become Lord Voldemort,
+                        opened the
+                        Chamber in his fifth year.
+        
+                        When a girl named Myrtle Warren was killed, the Ministry of Magic threatened to close the school. As
+                        Riddle spent his
+                        time away from Hogwarts in a Muggle orphanage, he did not want the school closed. His request to remain
+                        in school over
+                        the holidays was denied due to the situation he created. Upset with himself, he framed Rubeus Hagrid,
+                        and although Albus
+                        Dumbledore still suspected Riddle, Hagrid was expelled, and Riddle got off without punishment. However,
+                        in 1992, the
+                        Chamber was reopened, and it was discovered that Hagrid was innocent and Riddle was guilty.
+                    </p>
+                </div>
+                <div>
+                    <h3>1970-1990</h3>
+                    <p>
+                        Throughout the entirety of the First Wizarding War, which lasted for eleven long years and caused much
+                        distress among the students, Hogwarts Castle was perhaps the only safe haven in wizarding Britain, due
+                        to the presence of Albus Dumbledore. Dumbledore had risen to the post of Headmaster, and was the only
+                        one whom Voldemort was ever afraid of.
+                        By the end of the 1970s, Lord Voldemort’s ascendancy was almost complete. While the Ministry of Magic
+                        did their best to both put up a fight and keep wizardkind a secret, a true resistance to him was being
+                        concentrated in the underground organisation founded by Dumbledore himself called the Order of the
+                        Phoenix. Several former students at the school went on to join the order. On Hallowe'en of the 1981-1982
+                        school year, news would have reached the school of the fall of Lord Voldemort and his failed attempt at
+                        murdering the infant Harry Potter, after which students and staff alike would have celebrated the fall
+                        of the Dark Lord.
+                    </p>
+                </div>
+                <div>
+                    <h3>1991-1992</h3>
+                    <p>
+                        In 1991, Harry Potter began his career as a student at Hogwarts. Already famous for being believed to be responsible for vanquishing Lord Voldemort at the age of one, he soon began, with the help of his friends Ron Weasley and Hermione Granger, to unravel the secret of the Philosopher's Stone being kept at the school. Harry discovered that the Defence Against the Dark Arts Professor, Quirinus Quirrell, was a host body for the barely-alive Voldemort, who wanted to use the Stone to restore himself back to his former glory and gain everlasting life.
+                    </p>
+                </div>
+                <div>
+                    <h3>1994-1995</h3>
+                    <p>
+                        In 1994, Hogwarts played host to the infamous Triwizard Tournament, this time with more powerful safety measures in place. However, more dark plots were being hatched. Barty Crouch Jnr, disguised as Alastor "Mad-Eye" Moody, managed to enter Harry in the Tournament by putting his name in the Goblet of Fire under the name of a fourth school, which ensured he would be chosen by the Goblet. It was because of Crouch Jnr and his influence over certain house-elves that Harry ended up surviving until the end of the tournament and reaching the goal of the Third Task, along with fellow Hogwarts student Cedric Diggory. On Voldemort's orders, Diggory was killed by Pettigrew, and Harry was surrounded by Death Eaters in Little Hangleton Graveyard. Voldemort was brought back to his physical form using Harry's blood and the Resurrection Stone.
+                    </p>
+                </div>
+                <div>
+                    <h3>1996-1997</h3>
+                    <p>
+                        Through the 1996-1997 school year, the new Minister for Magic Rufus Scrimgeour ordered Aurors to guard Hogwarts for protection from Dark forces, along with the castle's defences being fortified in many ways. In 1997, Hogwarts was attacked by a mob of Death Eaters. Lucius Malfoy's son Draco was forced into the service of Lord Voldemort for fear of his and his family's lives. As a result, Headmaster Dumbledore's safety was compromised, and he was killed by Severus Snape, in a secret coup de grace arranged in advance between them. Following this "horrible" tragedy, Professor Minerva McGonagall was appointed acting Headmistress, though the security of the school hung by a thread. There was no certainty that Hogwarts would remain open. However, when Draco succeeded in allowing the Death Eaters entrance, the full effect came to be when many parents rushed their children home, fearing that even Hogwarts, reputably the safest location in the wizarding world, was no longer safe from Voldemort.
+                    </p>
+                </div>
+                <div>
+                    <h3>After 1998</h3>
+                    <p>
+                        In May 1998, the Battle of Hogwarts took place as one of its most infamous alumni, Tom Riddle, better known by then as Lord Voldemort, returned to attack the school and subdue or destroy its defenders. Voldemort claimed he had no desire to harm the school or its students, but he and his Death Eaters spared no one who opposed them and recklessly damaged the school during their assault.
+                        Numerous students, staff, parents, graduates, and friends of Hogwarts rose to the school's defence in its hour of need, including the notorious poltergeist Peeves. Thanks to Harry Potter, Lord Voldemort was permanently destroyed and his Death Eaters disbanded forever. Minerva McGonagall became the Headmistress of the school. Hogwarts sustained extensive damage during the battle. Multiple areas of the main building and adjacent areas were set on fire or blown up, and the Quidditch pitch was largely destroyed by fire.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="wizards" id="wizards">
+        <h2><i class="material-icons">groups</i>Powerful wizards who attended Hogwarts</h2>
+        <div class="textGold">
+
+            <p class="medieval">
+                A powerful wizard is one that casts powerful spells. Powerful spells are the result of casting the spells well. Casting a spell well results from a wizard's skill at magic. Thus, a powerful wizard is one with a high level of skill.
+            </p>
+            <p class="medieval">
+                It was believed that pure-bloods are inherently more powerful wizards, but some of the most powerful or particularly adept wizards and witches are in fact either half-blood (such as Lord Voldemort, Albus Dumbledore, Minerva McGonagall, Severus Snape and Harry Potter) or Muggle-born (such as Hermione Granger and Lily Evans).
+            </p>
+        </div>
+        <div class="images">
+        <div>
+            <h3>Albus Percival Wulfric Brian Dumbledore</h3>
+            <img src="img/AlbusDumbledore.png" alt="">
+        </div>
+        <div>
+            <h3>Tom Marvolo Riddle</h3>
+            <img src="img/TomRiddle.png" alt="">
+        </div>
+        <div>
+            <h3>Gellert Grindelwald</h3>
+            <img src="img/GellertGrindelwalt.png" alt="">
+        </div>
+        <div>
+            <h3>Mad-Eye Moody</h3>
+            <img src="img/Madeye.png" alt="">
+        </div>
+        <div>
+            <h3>Minerva McGonagall</h3>
+            <img src="img/MinervaMcGonnagall.png" alt="">
+        </div>
+        <div>
+            <h3>Newt Scamander</h3>
+            <img src="img/NewtScamander.png" alt="">
+        </div>
+        <div>
+            <h3>Severus Snape</h3>
+            <img src="img/Snape.png" alt="">
+        </div>
+        <div>
+            <h3>Filius Flitwick</h3>
+            <img src="img/FiliusFlitwick.png" alt="">
+        </div>
+    </div>
+        </div>
+            
+    </div>
+
+    <h2><i class="material-icons">near_me</i>How to reach us</h2>
+    <div class="reachUs" id="reachUs">
+        <div class="reachUsContainer">
+            <div class="left">
+                <h3><i class="material-icons">near_me</i>Location</h1>
+                <div>
+                    Hogwarts is located in the Scottish Highlands, near the all-wizard village of Hogsmeade and "not far" from Dufftown, in Moray, and Achintee, in Lochaber. Hogwarts is built in a valley area — surrounding mountains were part of the landscape — with the fairly large Great Lake to the south of the main building. The huge main oak front doors that leads into the Entrance Hall faces west, and opens up to sloping lawns. The deep Forbidden Forest extends around to the west of the castle.There are also exterior greenhouses and vegetable patches on the school grounds.
+                </div>
+                <h3><i class="material-icons">explore</i>How to reach us?</h1>
+                <div>Via Hogsmeade-Honeydukes cellar to the witch with the hump in Hogwarts, Shrieking Shack to the Whomping Willow, Other paths now caved in or known by Filch, Route students regularly take to get to and from Hogsmeade on days out.The Hogs Head secret path to the Room of requirement behind Ariana. Via Forbidden Forest.Via Knight Bus, ust outside the school gates.</div>
+            </div>
+            <div class="right">
+                <h3><i class="material-icons">directions_transit</i>Hogwarts Express</h2>
+                <div>The Hogwarts Express is the name of the train that runs between London King's Cross Station Platform 9¾ and
+                    Hogsmeade station. It makes this run about six times a year, maybe more, as needed. The Express dutifully carries
+                    students to and from Hogwarts School of Witchcraft and Wizardry at the start and end of every term.
+                    The train leaves Platform 9¾ without fail every 1 September at 11 o'clock in the morning, arriving at Hogsmeade
+                    station in the early evening. Students can take the train back to King's Cross Station to go home for the Christmas
+                    and Easter holidays, or they can stay at Hogwarts. It also makes the run back again to London at the
+                    end of term in June.</div>
+                <h3><i class="material-icons">directions_car</i>Private transportation</h2>
+                <div>Get to Hogwarts any way you like.Thestrals, Vanishing cabinets, Hippogriffs, Flying carpets, Enchanted vehicles, Floo network,Broomstick,Portkey...you name it and its probablyyy doable. Everything except apparition!!!</div>
+                <h3><i class="material-icons">local_parking</i>Parking</h2>
+                <div>There are no parking spaces in Hogwarts, but if you do get here by a private vehicle or a broom beware of the dementors that stand guard around Hogwarts walls.</div>
+            </div>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2264.700096382697!2d-1.7081144484470467!3d55.415582780368574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487e00e0ed23bc0d%3A0x8783a98b290f641!2sDvorac%20Alnwick!5e0!3m2!1shr!2shr!4v1607434384000!5m2!1shr!2shr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </div>
+    </main>
+
+    <footer>
+        <h1>Draco Dormiens Nunquam Titillandus</h1>
+        <h2>Never tickle a sleeping dragon</h2>
+    </footer>
+
+    <script src="javaScript/modalContact.js"></script>
+    <script src="javaScript/mobileMenu.js"></script>
+</body>
+</html>
